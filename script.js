@@ -11,21 +11,22 @@ for(placeholder of placeholders){
     placeholder.addEventListener("drop", dragdrop)
 }
 
-function dragstart(){
-    console.log("взяли карту мира")
+function dragstart(event){
+    event.target.classList.add("hold")
 }
-function dragend(){
-    console.log("dragend")
+function dragend(event){
+    event.target.className = "item"
 }
-function dragover(){
-    console.log("dragover")
+function dragover(event){
+    event.preventDefault()
 }
-function dragenter(){
-    console.log("dragenter")
+function dragenter(event){
+ event.target.classList.add("hovered")   
 }
-function dragleave(){
-    console.log("dragleave")
+function dragleave(event){
+    event.target.classList.remove("hovered")
 }
-function dragdrop(){
-    console.log("dragdrop")
+function dragdrop(event){
+    event.target.classList.remove("hovered")
+    event.target.append(item)
 }
