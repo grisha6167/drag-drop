@@ -44,9 +44,9 @@ body{
     text-align: center;
 
 }
-/* .item:hover{
+.item:hover{
     background-image:url("images/Image.jpeg") ;
-} */
+} 
 
 .item:active{
     cursor: grabbing;
