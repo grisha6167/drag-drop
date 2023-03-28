@@ -8,7 +8,9 @@ body{
      justify-content: center;
      overflow: hidden;
      padding-top: 70px;
-}
+     background-image: linear-gradient(blueviolet, white);
+    background-repeat: no-repeat;
+    }
 .row{
    
     display: flex;
@@ -58,4 +60,7 @@ body{
     background-image: linear-gradient(rgb(191, 0, 191), white);
     height: 350px;
     border-radius: 10px;
+}
+.hide{
+    display: none;
 }
